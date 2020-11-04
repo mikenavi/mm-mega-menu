@@ -179,6 +179,7 @@ JSON массив элементами которого являются объ�
 ```json
 "slots": "'a b c'"
 ```
+
 <table>
   <tr>
     <td>a</td>
@@ -186,19 +187,42 @@ JSON массив элементами которого являются объ�
     <td>c</td>
   </tr>
 </table>
+
 ***
+
 ```json
 "slots": "'a b c' 'd e f'"
 ```
-|a|b|с|
-|-|-|-|
-|d|e|f|
+
+<table>
+  <tr>
+    <td>a</td>
+    <td>b</td>
+    <td>c</td>
+  </tr>
+  <tr>
+    <td>d</td>
+    <td>e</td>
+    <td>f</td>
+  </tr>
+</table>
+
 ***
 ```json
 "slots": "'a b c' 'a d e'"
 ```
-| |b|с|
-|a|-|-|
-| |e|f|
-***
+
+<table>
+  <tr>
+    <td rowspan="2">a</td>
+    <td>b</td>
+    <td>c</td>
+  </tr>
+  <tr>
+    <td>d</td>
+    <td>e</td>
+  </tr>
+</table>
+
+
 ***
