@@ -84,9 +84,9 @@ JSON массив элементами которого являются объ�
 ### Тип `title`
 ```json
 {
-    "type": "title",
-    "content": "Category Name Slot A",
-    "link": "/wow-retail"
+  "type": "title",
+  "content": "Category Name Slot A",
+  "link": "/wow-retail"
 }
 ```
 
@@ -107,20 +107,20 @@ JSON массив элементами которого являются объ�
   "type": "list",
   "items": [
     {
-        "content": "item 1",
-        "link": "#"
+      "content": "item 1",
+      "link": "#"
     },
     {
-        "content": "item 2",
-        "link": "#"
+      "content": "item 2",
+      "link": "#"
     },
     {
-        "content": "item 3",
-        "link": "#"
+      "content": "item 3",
+      "link": "#"
     },
     {
-        "content": "item 4",
-        "link": "#"
+      "content": "item 4",
+      "link": "#"
     }
   ]
 }
@@ -139,9 +139,9 @@ JSON массив элементами которого являются объ�
 ### Тип `image`
 ```json
 {
-    "type": "image",
-    "image": "/media/4d/15/84/1598989521/BfA-High-End-Character-Season-4.jpg",
-    "link": "#"
+  "type": "image",
+  "image": "/media/4d/15/84/1598989521/BfA-High-End-Character-Season-4.jpg",
+  "link": "#"
 }
 ```
 
@@ -160,8 +160,8 @@ JSON массив элементами которого являются объ�
 ### Тип `custom`
 ```json
 {
-    "type": "custom",
-    "content": "Super schnell und super freundlicher Kontakt. <a href=\"#\">Wie immer alles<\/a> spitze, danke!"
+  "type": "custom",
+  "content": "Super schnell und super freundlicher Kontakt. <a href=\"#\">Wie immer alles<\/a> spitze, danke!"
 }
 ```
 
@@ -261,7 +261,7 @@ JSON массив элементами которого являются объ�
 ***
 
 ```json
-"'specials mounts banners' 'pvp raids banners'"
+"slots": "'specials mounts banners' 'pvp raids banners'"
 ```
 
 <table>
@@ -277,3 +277,312 @@ JSON массив элементами которого являются объ�
 </table>
 
 ***
+
+## Пример конфига
+
+```json
+[
+  {
+    "name": "WoW Retail",
+    "link": "/wow-retail",
+    "background": "/media/82/ac/eb/1599163965/game_wow.jpg",
+    "icon": "wow-retail",
+    "slots": "'a b c d'",
+    "blocks": [
+      {
+        "slot": "a",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot A"
+          },
+          {
+            "type": "list",
+            "items": [
+              {
+                "content": "item 1"
+              },
+              {
+                "content": "item 2",
+                "link": "#"
+              },
+              {
+                "content": "item 3",
+                "link": "#"
+              },
+              {
+                "content": "item 4",
+                "link": "#"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slot": "d",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot D",
+            "link": "#"
+          },
+          {
+            "type": "list",
+            "items": [
+              {
+                "content": "Recent Arrivals",
+                "link": "#"
+              },
+              {
+                "content": "Visions of N'Zoth",
+                "link": "#"
+              },
+              {
+                "content": "Rise of Azshara",
+                "link": "#"
+              },
+              {
+                "content": "On Sale",
+                "link": "#"
+              },
+              {
+                "content": "Best Sellers",
+                "link": "#"
+              },
+              {
+                "content": "Battle for Azeroth",
+                "link": "#"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slot": "b",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot B",
+            "link": "#"
+          },
+          {
+            "type": "image",
+            "image": "/media/4d/15/84/1598989521/BfA-High-End-Character-Season-4.jpg",
+            "link": "#"
+          },
+          {
+            "type": "custom",
+            "content": "Super schnell und super freundlicher Kontakt. <a href=\"#\">Wie immer alles<\/a> spitze, danke!"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "WoW Classic",
+    "link": "/wow-classic",
+    "background": "/media/e9/0f/8a/1599163965/game_wow-classic.jpg",
+    "icon": "wow-classic",
+    "slots": "'a b c d' 'a b c d'",
+    "blocks": [
+      {
+        "slot": "a",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot A",
+            "link": "#"
+          },
+          {
+            "type": "list",
+            "items": [
+              {
+                "content": "item 1",
+                "link": "#"
+              },
+              {
+                "content": "item 2",
+                "link": "#"
+              },
+              {
+                "content": "item 3",
+                "link": "#"
+              },
+              {
+                "content": "item 4",
+                "link": "#"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slot": "c",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot D",
+            "link": "#"
+          },
+          {
+            "type": "list",
+            "items": [
+              {
+                "content": "item 1",
+                "link": "#"
+              },
+              {
+                "content": "item 2",
+                "link": "#"
+              },
+              {
+                "content": "item 3",
+                "link": "#"
+              },
+              {
+                "content": "item 4",
+                "link": "#"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Division 2",
+    "link": "/the-division-2",
+    "icon": "the-division-2",
+    "background": "/media/b6/91/5f/1599163992/game_division.jpg",
+    "slots": "'a b c d' 'e f g h' 'i i i j'",
+    "blocks": [
+      {
+        "slot": "a",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot A",
+            "link": "#"
+          },
+          {
+            "type": "list",
+            "items": [
+              {
+                "content": "item 1",
+                "link": "#"
+              },
+              {
+                "content": "item 2",
+                "link": "#"
+              },
+              {
+                "content": "item 3",
+                "link": "#"
+              },
+              {
+                "content": "item 4",
+                "link": "#"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slot": "g",
+        "elements": [
+          {
+            "type": "custom",
+            "content": "We cooperate only with qualified and..."
+          }
+        ]
+      },
+      {
+        "slot": "i",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot D",
+            "link": "#"
+          },
+          {
+            "type": "custom",
+            "content": "We cooperate only with qualified and experienced top world players who participate personally in each event and ready to provide you with the best boosting service and gaming experience in your favorite online games. We ensure that every customer is highly satisfied and 100% positive feedback of our work pretty much sums it up ;) Get the most relevant eu boost and power leveling services from the professional players fast and easy!"
+          }
+        ]
+      },
+      {
+        "slot": "j",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot D",
+            "link": "#"
+          },
+          {
+            "type": "list",
+            "items": [
+              {
+                "content": "item 1",
+                "link": "#"
+              },
+              {
+                "content": "item 2",
+                "link": "#"
+              },
+              {
+                "content": "item 3",
+                "link": "#"
+              },
+              {
+                "content": "item 4",
+                "link": "#"
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "The Elder Scrolls Online",
+    "link": "/the-elder-scrolls-online",
+    "icon": "the-elder-scrolls-online"
+  },
+  {
+    "name": "Call of Duty WARZONE",
+    "link": "/call-of-duty-warzone",
+    "icon": "call-of-duty-warzone"
+  },
+  {
+    "name": "Destiny 2",
+    "link": "/destiny-2",
+    "icon": "destiny-2",
+    "background": "/media/71/1a/cf/1599163965/game_destiny2.jpg"
+  },
+  {
+    "name": "Warframe",
+    "link": "/warframe",
+    "icon": "warframe"
+  },
+  {
+    "name": "Path of Exile",
+    "link": "/path-of-exile",
+    "icon": "path-of-exile"
+  },
+  {
+    "name": "Animal Crossing New Horizons",
+    "link": "/animal-crossing-new-horizons",
+    "icon": "animal-crossing-new-horizons"
+  },
+  {
+    "name": "Valorant",
+    "link": "/valorant",
+    "icon": "valorant"
+  },
+  {
+    "name": "GIX Wear",
+    "link": "/gix-wear",
+    "icon": "gix-wear"
+  }
+]
+```
