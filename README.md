@@ -248,13 +248,12 @@ JSON массив элементами которого являются объ�
 
 <table>
   <tr>
-    <td>a</td>
-    <td colspan="2">b</td>
+    <td colspan="3">a</td>
   </tr>
   <tr>
+    <td>b</td>
     <td>c</td>
     <td>d</td>
-    <td>e</td>
   </tr>
 </table>
 
