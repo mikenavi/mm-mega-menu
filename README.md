@@ -467,7 +467,10 @@
         ]
       }
     ]
-  },
+  }
+```
+  
+```json
   {
     "name": "The Division 2",
     "link": "/the-division-2",
