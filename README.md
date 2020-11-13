@@ -11,6 +11,104 @@
 ## Вкладка
 
 Вкладка являет я объектом с ключами, содержащими настройки.
+```json
+  {
+    "name": "WoW Retail",
+    "link": "/wow-retail",
+    "background": "/media/82/ac/eb/1599163965/game_wow.jpg",
+    "icon": "wow-retail",
+    "slots": "'a b c d'",
+    "blocks": [
+      {
+        "slot": "a",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot A"
+          },
+          {
+            "type": "list",
+            "items": [
+              {
+                "content": "item 1"
+              },
+              {
+                "content": "item 2",
+                "link": "#"
+              },
+              {
+                "content": "item 3",
+                "link": "#"
+              },
+              {
+                "content": "item 4",
+                "link": "#"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slot": "d",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot D",
+            "link": "#"
+          },
+          {
+            "type": "list",
+            "items": [
+              {
+                "content": "Recent Arrivals",
+                "link": "#"
+              },
+              {
+                "content": "Visions of N'Zoth",
+                "link": "#"
+              },
+              {
+                "content": "Rise of Azshara",
+                "link": "#"
+              },
+              {
+                "content": "On Sale",
+                "link": "#"
+              },
+              {
+                "content": "Best Sellers",
+                "link": "#"
+              },
+              {
+                "content": "Battle for Azeroth",
+                "link": "#"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "slot": "b",
+        "elements": [
+          {
+            "type": "title",
+            "content": "Category Name Slot B",
+            "link": "#"
+          },
+          {
+            "type": "image",
+            "image": "/media/4d/15/84/1598989521/BfA-High-End-Character-Season-4.jpg",
+            "link": "#"
+          },
+          {
+            "type": "custom",
+            "content": "Super schnell und super freundlicher Kontakt. <a href=\"#\">Wie immer alles<\/a> spitze, danke!"
+          }
+        ]
+      }
+    ]
+  }
+```
 
 `name` - тип: строка
 
@@ -297,104 +395,6 @@
 
 ## Примеры конфигов
 
-```json
-  {
-    "name": "WoW Retail",
-    "link": "/wow-retail",
-    "background": "/media/82/ac/eb/1599163965/game_wow.jpg",
-    "icon": "wow-retail",
-    "slots": "'a b c d'",
-    "blocks": [
-      {
-        "slot": "a",
-        "elements": [
-          {
-            "type": "title",
-            "content": "Category Name Slot A"
-          },
-          {
-            "type": "list",
-            "items": [
-              {
-                "content": "item 1"
-              },
-              {
-                "content": "item 2",
-                "link": "#"
-              },
-              {
-                "content": "item 3",
-                "link": "#"
-              },
-              {
-                "content": "item 4",
-                "link": "#"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "slot": "d",
-        "elements": [
-          {
-            "type": "title",
-            "content": "Category Name Slot D",
-            "link": "#"
-          },
-          {
-            "type": "list",
-            "items": [
-              {
-                "content": "Recent Arrivals",
-                "link": "#"
-              },
-              {
-                "content": "Visions of N'Zoth",
-                "link": "#"
-              },
-              {
-                "content": "Rise of Azshara",
-                "link": "#"
-              },
-              {
-                "content": "On Sale",
-                "link": "#"
-              },
-              {
-                "content": "Best Sellers",
-                "link": "#"
-              },
-              {
-                "content": "Battle for Azeroth",
-                "link": "#"
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "slot": "b",
-        "elements": [
-          {
-            "type": "title",
-            "content": "Category Name Slot B",
-            "link": "#"
-          },
-          {
-            "type": "image",
-            "image": "/media/4d/15/84/1598989521/BfA-High-End-Character-Season-4.jpg",
-            "link": "#"
-          },
-          {
-            "type": "custom",
-            "content": "Super schnell und super freundlicher Kontakt. <a href=\"#\">Wie immer alles<\/a> spitze, danke!"
-          }
-        ]
-      }
-    ]
-  }
-```
 
 ```json
   {
