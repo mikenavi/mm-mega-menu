@@ -1,16 +1,12 @@
+**UPDATE 2020/11/13** Конфиг разбит вкладки, каждая вкладка теперь редактируется отдельно, каждая в своей категории
+
+---
+
 # Конфиг мегаменю
 
 ## Меню
 
-JSON массив элементами которого являются объекты - *вкладки*
-
-```json
-[
-  {},
-  {},
-  {}
-]
-```
+~~JSON массив элементами которого являются объекты - *вкладки*~~
 
 ## Вкладка
 
@@ -299,10 +295,9 @@ JSON массив элементами которого являются объ�
 
 ***
 
-## Пример конфига
+## Примеры конфигов
 
 ```json
-[
   {
     "name": "WoW Retail",
     "link": "/wow-retail",
@@ -398,7 +393,10 @@ JSON массив элементами которого являются объ�
         ]
       }
     ]
-  },
+  }
+```
+
+```json
   {
     "name": "WoW Classic",
     "link": "/wow-classic",
@@ -563,47 +561,5 @@ JSON массив элементами которого являются объ�
         ]
       }
     ]
-  },
-  {
-    "name": "The Elder Scrolls Online",
-    "link": "/the-elder-scrolls-online",
-    "icon": "the-elder-scrolls-online"
-  },
-  {
-    "name": "Call of Duty WARZONE",
-    "link": "/call-of-duty-warzone",
-    "icon": "call-of-duty-warzone"
-  },
-  {
-    "name": "Destiny 2",
-    "link": "/destiny-2",
-    "icon": "destiny-2",
-    "background": "/media/71/1a/cf/1599163965/game_destiny2.jpg"
-  },
-  {
-    "name": "Warframe",
-    "link": "/warframe",
-    "icon": "warframe"
-  },
-  {
-    "name": "Path of Exile",
-    "link": "/path-of-exile",
-    "icon": "path-of-exile"
-  },
-  {
-    "name": "Animal Crossing New Horizons",
-    "link": "/animal-crossing-new-horizons",
-    "icon": "animal-crossing-new-horizons"
-  },
-  {
-    "name": "Valorant",
-    "link": "/valorant",
-    "icon": "valorant"
-  },
-  {
-    "name": "GIX Wear",
-    "link": "/gix-wear",
-    "icon": "gix-wear"
   }
-]
 ```
